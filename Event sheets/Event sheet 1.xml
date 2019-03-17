@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="456917376406487" title="FloorMovement">
+            <sub-events>
+                <event-block sid="533824812232313">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="118252224132581" type="tiledFloor">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="192359076356473" type="tiledFloor">
+                            <param id="0" name="X">854</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="935140603621183">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="153971316090962" type="tiledFloor2">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="471891543332977" type="tiledFloor2">
+                            <param id="0" name="X">854</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="812572279564972" title="Text Debug">
+            <sub-events>
+                <event-block sid="295783565032887">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="887181427218618" type="txtDebug">
+                            <param id="0" name="Text">&quot;floor1: &quot;&amp;tiledFloor.X&amp;&quot;  floor2: &quot;&amp;tiledFloor2.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="268781076828481" title="Background Movement">
+            <sub-events>
+                <event-block sid="126509227887294">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="619074435763704" type="background1">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="266082318392342" type="background1">
+                            <param id="0" name="X">854</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="411231259625388">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="467162665597921" type="background2">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-854</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="487444072653728" type="background2">
+                            <param id="0" name="X">854</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="352484134960163" title="Player Animation">
+            <sub-events>
+                <event-block sid="827251556823458">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="762828326924233" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="753277421176636" type="player">
+                            <param id="0" name="Animation">&quot;walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="628835653305690" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="989916460342518">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="382815691508476" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="767857427332368" type="player">
+                            <param id="0" name="Animation">&quot;walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="341557456913165" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231546148715629">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="835998684859537" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="181981167758142" type="player">
+                            <param id="0" name="Animation">&quot;walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="725468964653417" type="player">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132354932755705">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="607649856900949" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="251600931963473" type="player">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708666803918099">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="509320471845700" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="632268193569770" type="player">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="227009492706756">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="836415427906466" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="276809462696183" type="player">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

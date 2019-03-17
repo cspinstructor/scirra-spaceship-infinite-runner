@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>SpaceMonster</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>space.mon.ster</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="background1" sid="220307545681225">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="174365284708161">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972598689184865" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\background.png">
+                        <collision-poly>
+                            <point x="0.00117096" y="0.002079" />
+                            <point x="0.998829" y="0.002079" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floorblock" sid="879400682520885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="344837643022746">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321743342055556" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508475" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\floor.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tiledFloor" sid="218146430143846">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="647912772517259">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="421842242171568">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\floor.png" />
+        </object-type>
+        <object-type name="tiledFloor2" sid="627690647677520">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="228274460358898">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="572317097338613">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\floor.png" />
+        </object-type>
+        <object-type name="player" sid="590609556615118">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="819704835034934">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="872463894254861" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\idle\idle_007.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="449280268937960" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\walk\walk_007.png" />
+                </animation>
+                <animation framecount="8" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="501388313585776" speed="10">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_000.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_001.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_002.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_003.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_004.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_005.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_006.png" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.505263" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\Gfx\Spriter\jump\jump_007.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtDebug" sid="436748809731068">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="background2" sid="142191332889486">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="809080492460106">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627122754727753" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\ScirraGameBackgroundProjs\Spaceship_infinite_runner\background.png">
+                        <collision-poly>
+                            <point x="0.00117096" y="0.002079" />
+                            <point x="0.998829" y="0.002079" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisiblewall" sid="723738486955795">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="393213944804872">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485161821678572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="305338401472183">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="8" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
